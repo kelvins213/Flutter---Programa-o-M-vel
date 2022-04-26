@@ -3,11 +3,15 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     const MaterialApp( //classe MaterialApp  (widget)
-      home: Scaffold( //classe Scaffold  (widget)
+      home: Scaffold(backgroundColor: Colors.lightBlue, //classe Scaffold  (widget)
         body: Center( //classe Center  (widget)
           child: Text ( //classe Text (widget)
             "Hello, World",
-                style: TextStyle (fontSize: 40),//classe TextStyle (widget)
+                style: TextStyle (
+                  fontSize: 40,
+                  color: Colors.red,
+                  backgroundColor: Colors.black
+                ),//classe TextStyle (widget)
           ),
         ),
       ),
