@@ -10,7 +10,7 @@ void main() {
                 style: TextStyle (
                   fontSize: 40,
                   color: Colors.red,
-                  backgroundColor: Colors.black
+                  backgroundColor: Colors.white
                 ),//classe TextStyle (widget)
           ),
         ),
@@ -19,6 +19,7 @@ void main() {
   );
 }
 
+// https://www.youtube.com/watch?v=z5iw2SeFx2M&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=121
 //O flutter trará duas postas: um android, e outra IOS.
 //A pasta lib será o diretório de código principal.
 //A pasta build, por sua vez, terá o código compilado.
