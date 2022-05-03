@@ -1,0 +1,72 @@
+import 'package:flutter/material.dart';
+
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('WhatsApp'),
+        backgroundColor: Color(0xFF075E54),
+      ),
+      body: ListView(
+        children: [
+          buildListTile(
+            img:
+            'https://br.web.img2.acsta.net/c_310_420/pictures/19/03/20/16/05/1007568.jpg',
+            contato: 'Contatinho 01 - 913',
+            msg: 'Oi sumida rsrsrs',
+            status: 'ONTEM',
+          ),
+          buildListTile(
+            img:
+            'https://br.web.img2.acsta.net/c_310_420/pictures/19/03/20/16/05/1007568.jpg',
+            contato: 'Contatinho 02',
+            msg: 'Oi varoa rsrsrs',
+            status: 'ONTEM',
+          ),
+          buildListTile(
+            img:
+            'https://br.web.img2.acsta.net/c_310_420/pictures/19/03/20/16/05/1007568.jpg',
+            contato: 'Contatinho 03',
+            msg: 'Oi varoa rsrsrs',
+            status: 'ONTEM',
+          ),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.insert_comment),
+        onPressed: () {},
+        backgroundColor: Color(0xFF25D366),
+      ),
+    );
+  }
+
+  buildListTile({
+    required String img,
+    required String contato,
+    required String msg,
+    required String status,
+  }) {
+    return ListTile(
+      leading: CircleAvatar(
+        radius: 30,
+        backgroundImage: NetworkImage(img),
+      ),
+      title: Text(
+        contato,
+        style: const TextStyle(
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      subtitle: Text(msg),
+      trailing: Text(status),
+    );
+  }
+}
