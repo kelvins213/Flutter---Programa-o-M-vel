@@ -1,0 +1,36 @@
+// Stateless: imutável. O stateless é usado para componentes os não mudam durante seu tempo de vida.
+// É uma classe abstrata, sempre sendo herdada pelo código. 
+// Sempre que você herdar o stateless, precisará construir o método build.
+// 
+// Statefulwidget: gerencia o estado do objeto. O método buil cria o objeto do código.
+// Mais complexo também.
+// Nessa classe, o método build também deve ser construído.
+//
+// home_page tudo minúsculo e separado por underline
+// O modificador override é necessário para estender ou modificar a implementação abstrata ou virtual de um método, propriedade, 
+// indexador ou evento herdado.
+// Todo aplicativo, no fim das contas, é uma lista.
+//
+// ListView() => Cria uma lista (a dos aplicativos)
+// Cria a estrutura da lista sozinho.
+// ListTile() => Filho do ListView
+// leading: Image.network('') => Ícone do lado esquerdo (já coloca em um amanho ajustável)
+// trailing: Text("Opa") => Deixa o texto do lado direito.
+// CircleAvatar() => Deixa a imagem do leading aredondada. 
+// radiues: 30 => Indica a medida do arredondamento.
+// buildListTile ({      ({}) as chaves dentro dos parênteses indicam que a passagem dos parâmetros é opcional.
+//    String img, 
+//    String titulo, 
+//    String mdg, 
+//    String 
+//    status
+// }) {}
+// appBar: AppBar(), => Cria a barra de navegação.
+// 0xFF(código da cor) => Modo de inserir uma cor hexadecimal.
+// 
+// onPressed () {} => Obrigatório no floatingActionButton
+// child: conteúdo que aparecerá dentro do botão
+// child: Icon (icon.),
+//
+//
+//
