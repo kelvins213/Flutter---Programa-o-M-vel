@@ -1,0 +1,46 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold (
+      body: ListView ( //dizendo que o corpo do Scaffold será uma lista
+        //todo widget terá um filho (children ou child) para que ele consiga aplicar sua funcionalidae sobre eles.
+        //children: suporta vários widgets. child: suporta somente um widget
+        children: [
+          Container (
+            margin: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(16),
+            color: Colors.purple,
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      const Text(
+                        'Coore que está rolanda promoção',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
