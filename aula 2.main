@@ -7,12 +7,11 @@
 //placeHolder ==> Simular uma caixinha: tamnaho e largura para por algo, como uma imagem.
 //expanded ==> Estica ou diminui para fazer algo caber no container. (geralmente usado para ajeitar os elementos na horizontal, que tem um tamanho bem definido)
 // scratch: expande as margens dos ementos, em relação ao container.
-//
-//
-//
-//
-//
-//
+//é uma lista, por isso começa com os [].
+//collumn: coloca um item abaixo do outro.
+//row: coloca um item ao lado do outro.
+//sempre alterar o método build. Ele é quem é chamado na classe main.
+
 
 import 'package:aula_913/home_page.dart';
 import 'package:flutter/material.dart';
