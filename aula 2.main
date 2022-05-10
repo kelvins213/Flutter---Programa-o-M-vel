@@ -1,3 +1,19 @@
+// O container toma um espaço vertical correspondente ao tamanho do conteúdo dentro dele.
+// ElevatedButton(onPressed: () {}, child: Text('Sei lá')), ==> Comando de um botão.
+//crossAxistAlignment(), ==> Comando para alinhar as columns
+//primary: , ==> Cor de fundo do ElevatedButton()
+//padding e margin
+//container ==> Pega a largura toda do pai
+//placeHolder ==> Simular uma caixinha: tamnaho e largura para por algo, como uma imagem.
+//expanded ==> Estica ou diminui para fazer algo caber no container. (geralmente usado para ajeitar os elementos na horizontal, que tem um tamanho bem definido)
+// scratch: expande as margens dos ementos, em relação ao container.
+//
+//
+//
+//
+//
+//
+
 import 'package:aula_913/home_page.dart';
 import 'package:flutter/material.dart';
 
