@@ -1,0 +1,14 @@
+import 'package:flutter/material.dart';
+import 'package:untitled/home_page.dart';
+
+void main () {
+
+
+  //alt + enter ==> importa as bibliotecas
+  runApp (
+    const MaterialApp (
+      home: HomePage(), //chamando a classe do outro arquivo
+    ),
+  );
+
+}
