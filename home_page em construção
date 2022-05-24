@@ -1,0 +1,84 @@
+import 'package:flutter/material.dart';
+
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.grey,
+      appBar: AppBar(
+        centerTitle: false,
+        backgroundColor: Colors.blueAccent,
+        title: const Text(
+          'Pesquisar',
+          style: TextStyle(fontSize: 24),
+        ),
+      ),
+
+      //Cada classe terá, logo de cara, um child. Esse child suporta apenas um widget.
+      //Quando esse widget for codado por você, logo em seguida, deve vim o children,
+      //que irá suportar vários widgets. [classe ==> child ==> widget ==> children ==> resto do código].
+
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: ListView(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
+                color: Colors.purple,
+              ),
+              padding: const EdgeInsets.all(16),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch, //estica as imagens e botões até a largura máxima do botão
+                      children: [
+                        const Text(
+                          'Top destinos mais buscados.',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 28,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 16),
+                        ElevatedButton(
+                          child: const Text(
+                              'opa',
+                              style: TextStyle(
+                                fontSize: 90,
+                              ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.yellow,
+                            // primary ==> define a cor de fundo do botão.
+                          ),
+                          onPressed: () {},
+                          //onPressed: () {} ==> é o que o botão irá fazer.
+
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+
+
+  }
+}
+
+//const ==> diz que o widget é constante, ou seja, não muda. Isoo ajuda na compilação do código/ reconstrução de tela.
+//caso tenha uma propriedade não constante, dá pau no código. Para resolver isso, basta cortar o const.
