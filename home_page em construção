@@ -52,10 +52,10 @@ class _HomePageState extends State<HomePage> {
                         const SizedBox(height: 16),
                         ElevatedButton(
                           child: const Text(
-                              'opa',
-                              style: TextStyle(
-                                fontSize: 90,
-                              ),
+                            'opa',
+                            style: TextStyle(
+                              fontSize: 90,
+                            ),
                           ),
                           style: ElevatedButton.styleFrom(
                             primary: Colors.yellow,
@@ -65,12 +65,35 @@ class _HomePageState extends State<HomePage> {
                           //onPressed: () {} ==> é o que o botão irá fazer.
 
                         ),
+
                       ],
+
                     ),
                   ),
                 ],
               ),
             ),
+            Container(
+              
+              color: Colors.red,
+                  margin: EdgeInsets.all(20),
+                  child: Column(
+                    children: [
+                      ElevatedButton(
+                        child: const Text(
+                          'iai',
+                          style: TextStyle(
+                            fontSize: 50,
+                            color: Colors.purple,
+                          ),
+                        ),
+                        onPressed: (){},
+                      ),
+                      Text("testando"),
+                    ],
+                  ),
+            ),
+
           ],
         ),
       ),
@@ -82,3 +105,4 @@ class _HomePageState extends State<HomePage> {
 
 //const ==> diz que o widget é constante, ou seja, não muda. Isoo ajuda na compilação do código/ reconstrução de tela.
 //caso tenha uma propriedade não constante, dá pau no código. Para resolver isso, basta cortar o const.
+
