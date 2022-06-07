@@ -58,48 +58,64 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.yellow,
+                            primary: Colors.grey,
                             // primary ==> define a cor de fundo do botão.
                           ),
                           onPressed: () {},
                           //onPressed: () {} ==> é o que o botão irá fazer.
-
                         ),
-
                       ],
-
                     ),
                   ),
                 ],
               ),
             ),
             Container(
-              
               color: Colors.red,
-                  margin: EdgeInsets.all(20),
-                  child: Column(
-                    children: [
-                      ElevatedButton(
-                        child: const Text(
-                          'iai',
-                          style: TextStyle(
-                            fontSize: 50,
-                            color: Colors.purple,
-                          ),
-                        ),
-                        onPressed: (){},
+              margin: EdgeInsets.all(20),
+              child: Column(
+                children: [
+                  ElevatedButton(
+                    child:
+                    const Text( //primeiro atributo do botão
+                      'iai',
+                      style: TextStyle(
+                        fontSize: 50,
+                        color: Colors.white,
                       ),
-                      Text("testando"),
-                    ],
+                    ),
+
+                    style: ElevatedButton.styleFrom( //segundo atributo do botão
+                      primary: Colors.brown,
+                    ),
+                    onPressed: (){}, //terceiro atributo do botão
                   ),
+                  Container(
+                    child: Expanded(
+                      child:
+                        ElevatedButton(
+                          child: const Text(
+                              'botão',
+                            style: TextStyle(
+                              fontSize: 50,
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom( //segundo atributo do botão
+                              primary: Colors.black,
+                          ),
+                          onPressed: (){},
+                        ),
+                    ),
+                  ),
+                  Text("testando"),
+                ],
+              ),
             ),
 
           ],
         ),
       ),
     );
-
-
   }
 }
 
