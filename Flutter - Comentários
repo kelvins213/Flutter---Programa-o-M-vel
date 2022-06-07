@@ -31,6 +31,7 @@
 // onPressed () {} => Obrigatório no floatingActionButton
 // child: conteúdo que aparecerá dentro do botão
 // child: Icon (icon.),
-//
-//
-//
+//Divide o espaço igualmente ==> space around
+//Dá o espaçamento máximo ==> space between
+//Dá o espaçamento igualmente tentando deixar as potas livres ==> space evely
+
